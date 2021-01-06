@@ -1,14 +1,23 @@
 const connection = require('../database/connection');
+const calcular = require('../helpers/calcular');
 
 module.exports = {
   async create(req, res) {
-    const { nome, sobrenome, nomeResponsavel, nascimento, avatar } = req.body;
+    const {
+      nome,
+      sobrenome,
+      sexo,
+      nascimento,
+      avatar,
+      nomeResponsavel,
+    } = req.body;
     const id = await connection('childrens').insert({
       nome,
       sobrenome,
-      nomeResponsavel,
+      sexo,
       nascimento,
       avatar,
+      nomeResponsavel,
     });
     return res.status(201).send(id);
   },

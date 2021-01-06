@@ -3,6 +3,7 @@ exports.up = function (knex) {
     table.increments();
     table.string('nome').notNullable;
     table.string('sobrenome').notNullable;
+    table.string('sexo').notNullable;
     table.date('nascimento').notNullable;
     table.string('nomeResponsavel').Nullable;
     table.string('avatar').Nullable;
