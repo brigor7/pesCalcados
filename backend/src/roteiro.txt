@@ -1,0 +1,35 @@
+backend
+✔ - Criação da pasta do projeto | backend e frontend
+✔ - Inicialição do projeto com yarn init -y em backend
+✔ - Criação de pasta src
+✔ - criação de index.html
+✔ - importação de modulo express e criação de rota get
+✔ - teste de rota no insomnia
+✔ - importação de modulo knex yarn add knex
+✔ - criação de pasta database
+✔ - criação de pasta migration em database
+✔ - execução de knex com yarn knex init para criação de arquivo de configuração knexfile.js
+✔ - setar configuração de conection e migrations em knexfile.js
+✔ - execução de migration para criação de tabela criancas com yarn knex migrate:make create_childrens
+✔ - implementaçao de functions up e down em create_childrens
+✔ - execução para criação de tabela yarn knex migrate:latest
+✔  - criação de conection em database
+✔ - implementação em routes do post /children
+✔ - criação de requisição /children no insominia
+ ✔- execução de requisiçao post /children
+ ✔- Implementaçao de rotas
+  ✔  - implementação em routes do POST /children
+  ✔  - criação de requisição /POST no insominia
+  ✔  - execução de requisiçao POST /children
+  ✔  - implementação em routes do GET /children
+  ✔  - criação de requisição /GET no insominia
+  ✔  - execução de requisiçao GET /children
+    - implementação em routes do PUT /children
+    - criação de requisição /PUT no insominia
+    - execução de requisiçao PUT /children
+    - implementação em routes do DELETE /children
+    - criação de requisição /DELETE no insominia
+    - execução de requisiçao DELETE /children
+
+
+frontend
