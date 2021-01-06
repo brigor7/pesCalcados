@@ -26,4 +26,22 @@ module.exports = {
     const childrens = await connection('childrens').select('*');
     return res.send(childrens);
   },
+
+  async pesquisa(req, res) {
+    const data = await connection('childrens').select('*');
+    const childrensArray = Array.from(data);
+
+    const childrens = childrensArray.map((children) => {
+      const { nome, sexo } = children;
+      const idade = calcular.calculaIdade(children.nascimento);
+      return {
+        nome,
+        sexo,
+        idade,
+      };
+    });
+
+    res.send(childrens);
+    console.log(childrens);
+  },
 };
