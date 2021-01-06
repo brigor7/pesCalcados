@@ -4,7 +4,7 @@ exports.up = function (knex) {
     table.string('nome').notNullable;
     table.string('sobrenome').notNullable;
     table.date('nascimento').notNullable;
-    table.string('nome-responsavel').Nullable;
+    table.string('nomeResponsavel').Nullable;
     table.string('avatar').Nullable;
   });
 };
