@@ -9,30 +9,34 @@ module.exports = {
       sexo,
       nascimento,
       avatar,
-      nomeResponsavel,
+      telefone,
+      email,
+      password,
     } = req.body;
-    const id = await connection('childrens').insert({
+    const id = await connection('godfathers').insert({
       nome,
       sobrenome,
       sexo,
       nascimento,
       avatar,
-      nomeResponsavel,
+      telefone,
+      email,
+      password,
     });
     return res.status(201).send(id);
   },
 
   async index(req, res) {
-    const childrens = await connection('childrens').select('*');
-    return res.send(childrens);
+    const godfathers = await connection('godfathers').select('*');
+    return res.send(godfathers);
   },
 
   /**Lista de crianças por nome */
   async pesquisa(req, res) {
-    const data = await connection('childrens').select('*');
-    const childrensArray = Array.from(data);
+    const data = await connection('godfathers').select('*');
+    const godfathersArray = Array.from(data);
 
-    const childrens = childrensArray.map((children) => {
+    const godfathers = godfathersArray.map((children) => {
       const { nome, sexo } = children;
       const idade = calcular.calculaIdade(children.nascimento);
       if (idade < 10) {
@@ -45,11 +49,11 @@ module.exports = {
     });
 
     /**Pesquisar crianças por sexo */
-    const childrensSex = childrensArray.filter((children) => {
+    const godfathersSex = godfathersArray.filter((children) => {
       return children.sexo !== 'masculino';
     });
 
-    res.send(childrens);
-    console.log(childrens);
+    res.send(godfathers);
+    console.log(godfathers);
   },
 };
