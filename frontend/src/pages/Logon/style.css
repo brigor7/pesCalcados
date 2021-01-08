@@ -1,5 +1,6 @@
 .logon-container {
   width: 100%;
+  max-width: 960px;
 
   height: 100vh;
   margin: 0 auto;
@@ -9,16 +10,18 @@
   justify-content: center;
 }
 
-.logon-container section.bglogon {
-  flex: 1;
+.bglogon img {
+  width: 100%;
 }
 
 .logon-container section.logon {
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  flex: 1;
+
+  background: white;
 }
 
 .logon-container section.logon div {
