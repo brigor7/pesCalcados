@@ -8,11 +8,11 @@ import logoRenascerImg from '../../assets/logoRenascer.png';
 export default function Logon() {
   return (
     <div className="logon-container">
-      <section className="bgLogon">
-        <img src={bgLogonImg} alt="background" />
-      </section>
-      <section className="logon">
-        <div className="content">
+      <div className="content">
+        <section className="bg-logon">
+          <img src={bgLogonImg} alt="background" />
+        </section>
+        <section className="logon">
           <div className="logoImg">
             <img src={logoImg} alt="logo pes calcados" />
           </div>
@@ -25,11 +25,11 @@ export default function Logon() {
               Não tenho cadastro
             </a>
           </form>
-        </div>
-        <div className="footer">
-          <img src={logoRenascerImg} alt="logo renascer" />
-        </div>
-      </section>
+          <div className="footer">
+            <img src={logoRenascerImg} alt="logo renascer" />
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
