@@ -20,7 +20,7 @@ export default function Logon() {
             <h1>Faça o logon</h1>
             <input placeholder="Informe seu id" />
             <button class="button">Entrar</button>
-            <a href="#">
+            <a href="/register">
               <FiLogIn size="16" color="#C32512" />
               Não tenho cadastro
             </a>
