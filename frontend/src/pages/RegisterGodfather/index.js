@@ -10,13 +10,12 @@ export default function Register() {
       <div className="content">
         <section>
           <img src={logoImg} alt="Logomarca" />
-          <h1>Cadastro</h1>
+          <h1>
+            Cadastro <br /> Madrinha/Padrinho
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
-            ullam perspiciatis cum amet natus dignissimos nulla laboriosam autem
-            tempore! Odio ratione perferendis pariatur necessitatibus incidunt!
-            Atque facere iusto, quae excepturi optio necessitatibus dicta dolor
-            sit porro perspiciatis dignissimos possimus quod!
+            Madrinha/Padrinho, informe seus dados ao lado para realizar o seu
+            cadastro.
           </p>
           <Link to="/">
             <FiArrowLeft size="16" color="#C32512" />
@@ -24,14 +23,16 @@ export default function Register() {
           </Link>
         </section>
         <form>
-          <input placeholder="Nome da ONG" />
+          <input placeholder="Nome" />
+          <input placeholder="Sobrenome" />
+          <input placeholder="Sexo" />
+          <label htmlFor="nascimento">Nascimento</label>
+          <input type="date" placeholder="nascimento" id="nascimento" />
           <input type="email" placeholder="Email" />
           <input placeholder="wathsapp" />
+          <label htmlFor="avatar">Avatar</label>
+          <input type="file" name="avatar" id="avatar" />
 
-          <div className="input-group">
-            <input placeholder="Cidade" />
-            <input placeholder="UF" style={{ width: 80 }} />
-          </div>
           <button className="button" type="submit">
             Cadastrar
           </button>

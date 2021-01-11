@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Logon from './pages/Logon';
-import Register from './pages/Register';
+import RegisterGodfather from './pages/RegisterGodfather';
+import RegisterChildren from './pages/RegisterChildren';
 
 export default function Routes() {
   return (
@@ -9,7 +10,8 @@ export default function Routes() {
         /** path="/" utilizado para acesso a localhost:3000, sem uso de outro
         dominio*/
         <Route path="/" exact component={Logon} />
-        <Route path="/register" component={Register} />
+        <Route path="/godfhater/create" component={RegisterGodfather} />
+        <Route path="/children/create" component={RegisterChildren} />
       </Switch>
     </BrowserRouter>
   );
