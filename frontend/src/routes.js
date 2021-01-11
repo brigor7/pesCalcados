@@ -1,7 +1,9 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Logon from './pages/Logon';
 import RegisterGodfather from './pages/RegisterGodfather';
+
 import RegisterChildren from './pages/RegisterChildren';
+import ViewChildren from './pages/ViewChildren';
 
 export default function Routes() {
   return (
@@ -12,6 +14,7 @@ export default function Routes() {
         <Route path="/" exact component={Logon} />
         <Route path="/godfhater/create" component={RegisterGodfather} />
         <Route path="/children/create" component={RegisterChildren} />
+        <Route path="/children/view" component={ViewChildren} />
       </Switch>
     </BrowserRouter>
   );
