@@ -1,6 +1,6 @@
 [ ] Estrutura 
   [ ] Criação de pasta frontend no projeto
-  [ ] Criação de projeto base com react create-react-app
+  [ ] Criação de projeto base com react |yarn create-app frontend
   [ ] Limpeza do código gerado
     [ ] Index.js
     [ ] App.js
@@ -15,5 +15,13 @@
   [ ] gerar arquivo migration |yarn knex migrate:make <nome da tabela>
   [ ] implementação dos metodos up and down da migration
   [ ] rodar a migration |yarn knex migration:latest
-[ ] Controllers
-  [ ] Criação de pasta controller em src
+[ ] importação de axios |yarn add axios 
+  [ ]Criação de pasta services/app.js com conexao para axios
+[ ] Criação de pasta pages para implementação das páginas
+  [ ] Criaçao da pasta Logon
+    [ ] Criação e implementação de arquivo index.js com escrita do html
+      [ ] Uso de conexão app/axios para chamada de endpoint
+      [ ] Uso de useState/imutabilidade para recebimento de dados, com tratamento assincrono dos dados
+      [ ] Uso de estados para carregamento de dados no JSX
+    [ ] Criação e implementação do arquivo style.css com estilização de index.html
+    [ ] No arquivo routes, realizar importaçao e chamada a logon vinculando a endpoint
