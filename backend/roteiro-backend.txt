@@ -29,7 +29,7 @@ backend
     - execução de requisiçao PUT /children
     - implementação em routes do DELETE /children
     - criação de requisição /DELETE no insominia
-    - execução de requisiçao DELETE /children
+    - execução de requisiçao DELETE /children2
 
 
 frontend

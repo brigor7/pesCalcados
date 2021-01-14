@@ -1,0 +1,19 @@
+[ ] Estrutura 
+  [ ] Criação de pasta frontend no projeto
+  [ ] Criação de projeto base com react create-react-app
+  [ ] Limpeza do código gerado
+    [ ] Index.js
+    [ ] App.js
+  [ ] Exclusão de arquivos não necessários
+  [ ] Importação do express e criação de router
+  [ ] Criação de pasta database/migrations
+  [ ] importação do SQLite3 yarn add sqlite3@5.0.0
+[ ] Knex e base de dados  
+  [ ] importação do knex para geração de sql yarn add knex
+  [ ] criação de knexfile.js - knex init
+  [ ] parametrizar com o local do banco de dados e migrations em desenv
+  [ ] gerar arquivo migration |yarn knex migrate:make <nome da tabela>
+  [ ] implementação dos metodos up and down da migration
+  [ ] rodar a migration |yarn knex migration:latest
+[ ] Controllers
+  [ ] Criação de pasta controller em src
